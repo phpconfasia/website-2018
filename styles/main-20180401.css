@@ -1,0 +1,77 @@
+nav .nav-wrapper,
+footer.page-footer {
+    background-color: #555AA4;
+}
+
+.brand-logo {
+    margin-top: 0.2em;
+    background: top left no-repeat url("../images/phpconfasia-logo.png");
+    display: block;
+    width: 300px;
+    height: 105px;
+}
+
+a>span {
+    display: none;
+}
+
+.slider .slides li .caption {
+    top: 51%;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #555AA4;
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+.section {
+    padding-top: 3em;
+}
+
+.date-details {
+    background-color: #fff;
+    padding: 0.6em;
+}
+
+.date-details h5 {
+    font-size: 1.2em;
+}
+
+.card-panel {
+    padding: 0.5em;
+    margin-bottom: 2px;
+}
+
+.card-panel .row {
+    margin-bottom: 0px;
+}
+
+.date-details {
+    background-color: #fff;
+    padding: 0.6em;
+}
+
+.date-details h5 {
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 992px) {
+    .brand-logo {
+        margin-left: 0.2em;
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .brand-logo {
+        background: top left no-repeat url("../images/phpconfasia-logo@2x.png");
+        background-size: 300px 105px;
+    }
+}
