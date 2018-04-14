@@ -6,12 +6,13 @@ footer.page-footer {
 .brand-logo {
     margin-top: 0.2em;
     background: top left no-repeat url("../images/phpconfasia-logo.png");
+    background-size: cover;
     display: block;
     width: 300px;
     height: 105px;
 }
 
-a>span {
+a > span {
     display: none;
 }
 
@@ -66,10 +67,14 @@ a>span {
     }
 }
 
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5) {
+@media all and (max-width: 450px) {
+    .brand-logo {
+        width: 200px;
+        height: 70px;
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
     .brand-logo {
         background: top left no-repeat url("../images/phpconfasia-logo@2x.png");
         background-size: 300px 105px;
