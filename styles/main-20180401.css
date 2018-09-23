@@ -8,15 +8,6 @@ footer.page-footer {
     background-color: #555AA4;
 }
 
-.brand-logo {
-    margin-top: 0.2em;
-    background: top left no-repeat url("../images/phpconfasia-logo.png");
-    background-size: cover;
-    display: block;
-    width: 300px;
-    height: 105px;
-}
-
 a > span {
     display: none;
 }
@@ -66,22 +57,42 @@ a > span {
     font-size: 1.2em;
 }
 
-@media screen and (min-width: 992px) {
-    .brand-logo {
-        margin-left: 0.2em;
-    }
-}
-
-@media all and (max-width: 450px) {
-    .brand-logo {
-        width: 200px;
-        height: 70px;
-    }
+nav .brand-logo span {
+    margin-top: 0.2em;
+    margin-left: 0.2em;
+    background: top left no-repeat url("../images/phpconfasia-logo.png");
+    background-size: cover;
+    display: block;
+    width: 300px;
+    height: 105px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-    .brand-logo {
+    .brand-logo span {
         background: top left no-repeat url("../images/phpconfasia-logo@2x.png");
         background-size: 300px 105px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav .brand-logo span {
+        margin-top: 0em;
+        margin-left: 0em;
+        width: 160px;
+        height: 56px;
+        background-size: 160px 56px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    nav .brand-logo span {
+        margin-top: 0em;
+        margin-left: 0em;
+        width: 185px;
+        height: 64px;
+        background-size: 185px 64px;
     }
 }
